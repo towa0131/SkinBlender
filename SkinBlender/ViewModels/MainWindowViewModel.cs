@@ -68,8 +68,9 @@ namespace SkinBlender.ViewModels
 
                     SaveFileDialog saveDialog = new SaveFileDialog()
                     {
+                        FileName = "output",
                         DefaultExt = "png",
-                        Filter = "Images|*.png;*.bmp;*.jpg"
+                        Filter = "画像ファイル|*.png;*.bmp;*.jpg"
                     };
 
                     if (saveDialog.ShowDialog() == true)
